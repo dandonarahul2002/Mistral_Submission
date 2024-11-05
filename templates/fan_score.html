@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fan Score Results</title>
+</head>
+<body>
+    <h1>Fan Score Results for {{ artist_name }}</h1>
+    <p><strong>Algorithmic Score:</strong> {{ data.algorithmic_score }}</p>
+    <p><strong>Mistral AI Analysis Score:</strong> {{ data.mistral_analysis_score }}</p>
+    <p><strong>Weighted Fan Score:</strong> {{ data.weighted_fan_score }}</p>
+    <h2>Factor Scores:</h2>
+    <ul>
+        {% for factor, score in data.factor_scores.items() %}
+            <li><strong>{{ factor }}:</strong> {{ score }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
