@@ -34,7 +34,7 @@ The Fan Score Calculator App is a web-based application that allows users to con
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/dandonarahul2002/Mistral_Submission.git
-    cd yourproject
+    cd Mistral_Submission
     ```
 
 2. **Set up a virtual environment**:
